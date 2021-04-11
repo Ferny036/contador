@@ -21,10 +21,10 @@ function App() {
     <>
       <h1 id="count">Cuenta: {count}</h1>
       <section className='container'>
-        <Button style="btn-primary" text={plusIcon} value="Sumar" update={() => { setCount(count + salto) }}></Button>
-        <Button style="btn-primary" text={dashIcon} value="Restar" update={() => { setCount(count - salto) }}></Button>
+        <Button style={{ classes: "btn-primary" }} text={plusIcon} value="Sumar" update={() => { setCount(count + salto) }}></Button>
+        <Button style={{ classes: "btn-primary" }} text={dashIcon} value="Restar" update={() => { setCount(count - salto) }}></Button>
         <input type="number" onChange={handleInput} value={salto} />
-        <Button style="btn-secondary" text={resetIcon} value="Reset" update={() => { setCount(defaultValue); setSalto(defaultValue) }}></Button>
+        <Button style={{ classes: "btn-secondary" }} text={resetIcon} value="Reset" update={() => { setCount(defaultValue); setSalto(defaultValue) }}></Button>
       </section>
     </>
   );
