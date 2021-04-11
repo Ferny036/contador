@@ -1,0 +1,33 @@
+$black-color: #0E0B16;
+$primary-color: #4717F6;
+$secondary-color: #A239CA;
+$white-color: #E7DFDD;
+
+button{
+  width: auto;
+  height: max-content;
+  padding: 0.8rem 1.6rem;
+  color: $white-color;
+  font-size: 3rem;
+  border-radius: 0.8rem;
+  margin: 1.5rem;
+  border: 0rem transparent;
+  cursor: pointer;
+  transition: transform 100ms ease-out, background 150ms ease-in-out;
+}
+
+button:hover{
+  background: #ff2000;
+}
+
+button:active{
+  transform: translateY(1rem);
+}
+
+.btn-primary{
+  background-color: $primary-color;
+}
+
+.btn-secondary{
+  background-color: $secondary-color;
+}
